@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nolphea - Artiste française créant des illustrations douces, poétiques et fantastiques. Découvrez mon portfolio.">
+    <title>Nolphea - Portfolio Artistique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="images/jpg" href="./images/favicon.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-text">Nolphea</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenue dans mon univers artistique</h1>
+                <p class="hero-subtitle">Découvrez mes créations et mon parcours</p>
+                <a href="#gallery" class="btn btn-primary">Explorer la galerie</a>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">À propos</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro">Bonjour, je suis <strong>Nolphea</strong>, artiste française de 21 ans et
+                            étudiante en art !</p>
+                        <p>Depuis mon enfance, le dessin a toujours été bien plus qu’un simple passe-temps : c’est pour
+                            moi un véritable langage, une manière unique d’exprimer mes émotions et de m’évader du
+                            quotidien.
+                            À travers mes créations, je cherche à transmettre douceur, poésie et chaleur, en invitant
+                            chacun à entrer dans mon univers fantastique. Cet univers est peuplé de tout ce qui me
+                            passionne : la beauté de la nature, les aventures qui font rêver, des créatures imaginaires
+                            et des animaux qui éveillent la curiosité.</p>
+                        <p>Chaque illustration est pensée comme une porte ouverte vers un monde où l’imaginaire prend
+                            vie.
+                            Mon objectif est de vous faire voyager, de vous émerveiller et de vous permettre de
+                            rencontrer mes personnages, qui ont chacun leur histoire et leur personnalité.
+                            J’espère que mes œuvres sauront vous toucher, vous inspirer et vous offrir un moment de rêve
+                            et de découverte.</p>
+                    </div>
+                    <div class="tools-section">
+                        <div class="tool-card">
+                            <div class="tool-icon">🎨</div>
+                            <h3>Traditionnel</h3>
+                            <ul>
+                                <li>Carnet de croquis (Hahnemühle, Art Creation)</li>
+                                <li>Aquarelles (Palette Van Gogh)</li>
+                                <li>Pinceaux Raphael</li>
+                                <li>Crayons de couleur (Polychromos Faber Castell)</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">✨</div>
+                            <h3>Digital</h3>
+                            <ul>
+                                <li>iPad Pro</li>
+                                <li>Procreate</li>
+                                <li>Procreate Dreams (animation)</li>
+                                <li>InDesign (mise en page)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Galerie</h2>
+                <p class="section-subtitle">Une sélection de mes œuvres</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/full-illustration.jpg" alt="Illustration complète" loading="lazy">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/reaching-the-stars.jpg" alt="Reaching the Stars" loading="lazy">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/ula-illu.jpg" alt="Ula Illustration" loading="lazy">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Envie de collaborer ou de me poser une question ?</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Votre nom</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Votre email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Votre message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Envoyer</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Nolphea</div>
+                <div class="footer-links">
+                    <a href="#about">À propos</a>
+                    <a href="#gallery">Galerie</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nolphea - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
